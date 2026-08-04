@@ -1,1 +1,185 @@
+TASK_29_EV_CHARGING_NETWORK_PLANNER
+EV Charging Network Planner
+Project Overview
 
+The EV Charging Network Planner is a data-driven infrastructure planning system designed to support the expansion of electric vehicle (EV) charging networks. The project analyzes charging station performance, identifies underserved regions, predicts future charging demand, and recommends optimal locations for new charging stations. It combines data analytics, SQL, machine learning, geographic analysis, and Power BI dashboards to assist infrastructure leadership in making strategic investment decisions.
+
+Business Problem
+
+With the rapid growth of electric vehicles, existing charging infrastructure faces challenges such as uneven coverage, congestion, long waiting times, and inefficient resource allocation. The objective of this project is to identify infrastructure gaps, prioritize expansion opportunities, and optimize investment planning for future EV charging networks.
+
+Project Objectives
+Analyze the existing EV charging infrastructure.
+Identify underserved regions and coverage gaps.
+Forecast future charging demand.
+Build machine learning models for expansion recommendations.
+Perform geographic analysis using interactive maps.
+Develop Power BI dashboards for strategic decision-making.
+Recommend locations for new charging stations and station upgrades.
+Technologies Used
+Python
+Pandas
+NumPy
+Matplotlib
+Seaborn
+SQLite
+Scikit-learn
+GeoPandas
+Folium
+Power BI
+Google Colab
+Project Structure
+TASK_29_EV_CHARGING_NETWORK_PLANNER/
+│
+├── data/
+│   └── ev.csv
+│
+├── notebooks/
+│   └── EV_Charging_Network_Planner.ipynb
+│
+├── dashboards/
+│   └── EV_Infrastructure_Command_Center.pbix
+│
+├── maps/
+│   ├── Charging_Station_Map.html
+│   ├── Heatmap.html
+│   ├── Coverage_Map.html
+│   └── Expansion_Recommendation_Map.html
+│
+├── reports/
+│   └── Project_Report.pdf
+│
+├── app/
+│   ├── main.py
+│   ├── ev_analysis.py
+│   └── ml_model.py
+│
+├── presentation/
+│   └── EV_Charging_Network_Planner.pptx
+│
+├── README.md
+└── requirements.txt
+Project Workflow
+Phase 1 – Data Collection
+Load EV charging station dataset.
+Explore dataset structure.
+Phase 2 – Data Cleaning
+Handle missing values.
+Remove duplicates.
+Convert data types.
+Phase 3 – Feature Engineering
+Station Utilization (%)
+Demand Score
+Coverage Score
+Queue Length
+Congestion Risk
+Expansion Priority Index
+Expansion Recommendation
+Phase 4 – Exploratory Data Analysis
+Stations by City
+EV Growth Trend
+Charger Type Distribution
+Charging Sessions
+Revenue Analysis
+Station Utilization
+Queue Length Analysis
+Charging Duration
+Phase 5 – SQL Analysis
+Total Charging Stations
+Average Charging Capacity
+Charger Type Distribution
+Top Busy Stations
+Phase 6 – Machine Learning
+
+Models Used:
+
+Decision Tree Classifier
+Random Forest Classifier
+Gradient Boosting Classifier
+
+Evaluation Metrics:
+
+Accuracy
+Precision
+Recall
+F1 Score
+Confusion Matrix
+Classification Report
+Phase 7 – Geographic Analysis
+
+Interactive Maps:
+
+Charging Station Map
+Heatmap
+Coverage Map
+Expansion Recommendation Map
+Phase 8 – Power BI Dashboard
+
+Dashboard 1:
+
+Executive Overview
+
+Dashboard 2:
+
+Demand Analysis
+
+Dashboard 3:
+
+Expansion Planning
+Phase 9 – Business Recommendations
+Identify underserved regions.
+Recommend expansion locations.
+Reduce charging congestion.
+Prioritize infrastructure investments.
+Improve charging accessibility.
+Machine Learning Features
+Cost (USD/kWh)
+Usage Statistics
+Charging Capacity
+Reviews
+Parking Spots
+Installation Year
+EV Growth
+Charging Sessions
+Revenue
+Station Utilization
+Queue Length
+Average Charging Time
+
+Target Variable:
+
+Expansion Priority
+Geographic Outputs
+Charging_Station_Map.html
+Heatmap.html
+Coverage_Map.html
+Expansion_Recommendation_Map.html
+Dashboard KPIs
+Total Stations
+Total EVs
+Average Utilization
+Average Queue Length
+Coverage Score
+Congestion Risk
+Revenue
+Business Recommendations
+Install new charging stations in underserved regions.
+Upgrade stations experiencing high utilization and long queues.
+Prioritize projects with high Expansion Priority Index.
+Increase deployment of fast chargers in congested areas.
+Continuously monitor demand using Power BI dashboards.
+Expected Outcomes
+Improved charging accessibility.
+Reduced waiting times.
+Better infrastructure utilization.
+Data-driven investment decisions.
+Enhanced customer satisfaction.
+Optimized EV charging network expansion.
+Requirements
+
+Install the required Python libraries using:
+
+pip install -r requirements.txt
+Conclusion
+
+The EV Charging Network Planner provides an end-to-end solution for analyzing EV charging infrastructure and supporting strategic expansion planning. By integrating machine learning, SQL, geographic analysis, and business intelligence, the project enables infrastructure leaders to identify coverage gaps, forecast future demand, optimize investments, and improve the overall efficiency of the EV charging network.
