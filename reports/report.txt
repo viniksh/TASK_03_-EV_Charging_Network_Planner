@@ -1,0 +1,191 @@
+EV Charging Network Planner
+Project Report
+1. Introduction
+
+The rapid adoption of Electric Vehicles (EVs) has significantly increased the demand for charging infrastructure. However, the growth of charging stations has not kept pace with EV adoption, leading to congestion, uneven coverage, and inefficient infrastructure utilization. This project develops an EV Charging Network Planning System that supports data-driven infrastructure planning by identifying underserved regions, forecasting future charging demand, prioritizing expansion, and recommending strategic investments. The solution combines data analytics, machine learning, geographic analysis, SQL, and Power BI dashboards to assist infrastructure leadership in making informed expansion decisions.
+
+2. Business Problem
+
+The EV infrastructure provider faces several operational challenges, including charging stations operating at very high capacity, long charging queues, unequal distribution of charging stations, limited expansion budgets, and increasing EV adoption. Leadership requires a planning system capable of identifying where new charging stations should be installed, which existing stations require upgrades, and how infrastructure investments can generate maximum business impact.
+
+3. Project Objectives
+
+The primary objectives of this project are to:
+
+Analyze the current EV charging infrastructure.
+Identify underserved regions and coverage gaps.
+Discover high-growth EV demand zones.
+Predict expansion priorities using machine learning.
+Recommend locations for new charging stations.
+Build interactive Power BI dashboards.
+Generate geographic maps for strategic planning.
+4. Dataset Description
+
+The dataset contains information related to EV charging stations, including:
+
+Station ID
+Address
+City
+Latitude
+Longitude
+Charger Type
+Charging Capacity (kW)
+Cost (USD/kWh)
+Availability
+Station Operator
+Renewable Energy Source
+Installation Year
+Parking Spots
+Usage Statistics
+Reviews and Ratings
+
+Additional features such as EV Growth, Charging Sessions, Revenue, Queue Length, Average Charging Time, Coverage Score, Congestion Risk, Demand Score, and Expansion Priority Index were created during feature engineering.
+
+5. Data Preprocessing
+
+The dataset was cleaned by removing duplicate records, handling missing values, converting appropriate columns into correct data types, and performing feature engineering. New analytical features including Station Utilization, Demand Score, Coverage Score, Queue Length, Congestion Risk, and Expansion Priority Index were generated to improve planning and machine learning performance.
+
+6. Exploratory Data Analysis
+
+Several visualizations were created to understand infrastructure performance:
+
+Charging Stations by City
+EV Growth Over Time
+Charger Type Distribution
+Charging Duration Distribution
+EV Population vs Charging Sessions
+Correlation Heatmap
+
+The analysis revealed variations in charging demand across cities, differences in charger type distribution, and important relationships among utilization, revenue, queue length, and charging sessions.
+
+7. SQL Analysis
+
+SQLite was used to perform database analysis without requiring a MySQL installation.
+
+The SQL queries included:
+
+Total number of charging stations
+Average charging capacity
+Charger type distribution
+Top 10 busiest charging stations
+
+SQL provided quick retrieval of important business metrics and supported decision-making.
+
+8. Machine Learning
+
+Machine learning models were developed to predict Expansion Priority.
+
+Models Used
+Decision Tree Classifier
+Random Forest Classifier
+Gradient Boosting Classifier
+Features Used
+Charging Capacity
+Usage Statistics
+Revenue
+EV Growth
+Charging Sessions
+Queue Length
+Station Utilization
+Charging Time
+Installation Year
+Parking Spots
+Reviews
+Charging Cost
+Evaluation Metrics
+Accuracy
+Precision
+Recall
+F1 Score
+Confusion Matrix
+Classification Report
+
+Random Forest Feature Importance identified Station Utilization, Revenue, Charging Sessions, EV Growth, and Queue Length as the most influential variables affecting expansion priority.
+
+9. Geographic Analysis
+
+Geographic analysis was performed using Folium and GeoPandas.
+
+Four interactive maps were generated:
+
+Charging Station Map
+Utilization Heatmap
+Coverage Map
+Expansion Recommendation Map
+
+These maps provide clear visualization of charging station locations, congestion hotspots, coverage gaps, and high-priority expansion regions.
+
+10. Power BI Dashboard
+
+An EV Infrastructure Command Center was developed using Power BI.
+
+Dashboard 1 – Executive Overview
+
+KPIs:
+
+Total Stations
+Total EVs
+Average Utilization
+Average Queue Length
+Coverage Score
+Congestion Risk
+Revenue
+
+Visualizations:
+
+Stations by City
+EV Growth Trend
+Station Utilization
+Charger Type Distribution
+Dashboard 2 – Demand Analysis
+
+Visualizations:
+
+EV Population
+Charging Sessions
+Peak Usage Hours
+Future Demand Zones
+Dashboard 3 – Expansion Planning
+
+Visualizations:
+
+Coverage Gap
+Priority Locations
+Congestion Map
+Recommended Expansion Areas
+11. Strategic Findings
+
+The analysis identified several underserved regions with low charging coverage and increasing EV demand. High-growth areas showed increasing charging sessions and higher utilization, indicating future demand over the next three to five years. Stations with high utilization, long queue lengths, and elevated congestion risk were identified as priority candidates for expansion. Data-driven investment decisions focusing on high-demand and low-coverage locations can significantly improve charging accessibility, reduce waiting times, and increase return on infrastructure investment.
+
+12. Business Recommendations
+Install new charging stations in underserved regions.
+Upgrade stations experiencing high utilization and long queues.
+Prioritize investment in locations with high Expansion Priority Index.
+Increase deployment of fast chargers in congested areas.
+Continuously monitor station utilization and EV adoption using real-time dashboards.
+13. Expected Business Impact
+
+Implementation of the recommendations is expected to:
+
+Improve charging accessibility.
+Reduce charging queue lengths.
+Increase station utilization efficiency.
+Support future EV demand.
+Optimize infrastructure investment.
+Improve customer satisfaction.
+Enable data-driven infrastructure planning.
+14. Technologies Used
+Python
+Pandas
+NumPy
+Matplotlib
+Seaborn
+SQLite
+Scikit-learn
+GeoPandas
+Folium
+Power BI
+Google Colab
+15. Conclusion
+
+The EV Charging Network Planner successfully integrates data analytics, SQL, machine learning, geographic analysis, and business intelligence to support strategic infrastructure planning. By identifying coverage gaps, congestion hotspots, future demand zones, and investment priorities, the system provides leadership with practical recommendations for expanding the EV charging network. The solution demonstrates how data-driven planning can improve operational efficiency, maximize return on investment, and support the growing electric vehicle ecosystem.
